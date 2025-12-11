@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "market": "Kimironko Market",
+    "location": "Kigali",
+    "products": [
+      {
+        "id": 1,
+        "name": "Beans",
+        "today_price": 850,
+        "yesterday_price": 800,
+        "unit": "kg"
+      },
+      {
+        "id": 2,
+        "name": "Rice",
+        "today_price": 1200,
+        "yesterday_price": 1200,
+        "unit": "kg"
+      },
+      {
+        "id": 3,
+        "name": "Tomatoes",
+        "today_price": 600,
+        "yesterday_price": 650,
+        "unit": "kg"
+      },
+      {
+        "id": 4,
+        "name": "Potatoes",
+        "today_price": 400,
+        "yesterday_price": 420,
+        "unit": "kg"
+      }
+    ],
+    "updated_at": "2025-12-11T10:30:00"
+  },
+  {
+    "id": 2,
+    "market": "Nyabugogo Market",
+    "location": "Kigali",
+    "products": [
+      {
+        "id": 5,
+        "name": "Beans",
+        "today_price": 830,
+        "yesterday_price": 800,
+        "unit": "kg"
+      },
+      {
+        "id": 6,
+        "name": "Rice",
+        "today_price": 1180,
+        "yesterday_price": 1200,
+        "unit": "kg"
+      },
+      {
+        "id": 7,
+        "name": "Tomatoes",
+        "today_price": 580,
+        "yesterday_price": 600,
+        "unit": "kg"
+      },
+      {
+        "id": 8,
+        "name": "Potatoes",
+        "today_price": 390,
+        "yesterday_price": 400,
+        "unit": "kg"
+      }
+    ],
+    "updated_at": "2025-12-11T09:45:00"
+  },
+  {
+    "id": 3,
+    "market": "Musanze Market",
+    "location": "Northern Province",
+    "products": [
+      {
+        "id": 9,
+        "name": "Beans",
+        "today_price": 870,
+        "yesterday_price": 850,
+        "unit": "kg"
+      },
+      {
+        "id": 10,
+        "name": "Rice",
+        "today_price": 1250,
+        "yesterday_price": 1200,
+        "unit": "kg"
+      },
+      {
+        "id": 11,
+        "name": "Tomatoes",
+        "today_price": 620,
+        "yesterday_price": 620,
+        "unit": "kg"
+      },
+      {
+        "id": 12,
+        "name": "Potatoes",
+        "today_price": 380,
+        "yesterday_price": 400,
+        "unit": "kg"
+      }
+    ],
+    "updated_at": "2025-12-11T11:00:00"
+  },
+  {
+    "id": 4,
+    "market": "Huye Market",
+    "location": "Southern Province",
+    "products": [
+      {
+        "id": 13,
+        "name": "Beans",
+        "today_price": 820,
+        "yesterday_price": 820,
+        "unit": "kg"
+      },
+      {
+        "id": 14,
+        "name": "Rice",
+        "today_price": 1190,
+        "yesterday_price": 1210,
+        "unit": "kg"
+      },
+      {
+        "id": 15,
+        "name": "Tomatoes",
+        "today_price": 590,
+        "yesterday_price": 580,
+        "unit": "kg"
+      },
+      {
+        "id": 16,
+        "name": "Potatoes",
+        "today_price": 410,
+        "yesterday_price": 400,
+        "unit": "kg"
+      }
+    ],
+    "updated_at": "2025-12-11T08:30:00"
+  },
+  {
+    "id": 5,
+    "market": "Rubavu Market",
+    "location": "Western Province",
+    "products": [
+      {
+        "id": 17,
+        "name": "Beans",
+        "today_price": 860,
+        "yesterday_price": 840,
+        "unit": "kg"
+      },
+      {
+        "id": 18,
+        "name": "Rice",
+        "today_price": 1220,
+        "yesterday_price": 1200,
+        "unit": "kg"
+      },
+      {
+        "id": 19,
+        "name": "Tomatoes",
+        "today_price": 610,
+        "yesterday_price": 630,
+        "unit": "kg"
+      },
+      {
+        "id": 20,
+        "name": "Potatoes",
+        "today_price": 395,
+        "yesterday_price": 395,
+        "unit": "kg"
+      }
+    ],
+    "updated_at": "2025-12-11T10:15:00"
+  },
+  {
+    "id": 6,
+    "market": "Kayonza Market",
+    "location": "Eastern Province",
+    "products": [
+      {
+        "id": 21,
+        "name": "Beans",
+        "today_price": 840,
+        "yesterday_price": 830,
+        "unit": "kg"
+      },
+      {
+        "id": 22,
+        "name": "Rice",
+        "today_price": 1210,
+        "yesterday_price": 1230,
+        "unit": "kg"
+      },
+      {
+        "id": 23,
+        "name": "Tomatoes",
+        "today_price": 595,
+        "yesterday_price": 590,
+        "unit": "kg"
+      },
+      {
+        "id": 24,
+        "name": "Potatoes",
+        "today_price": 405,
+        "yesterday_price": 410,
+        "unit": "kg"
+      }
+    ],
+    "updated_at": "2025-12-11T09:20:00"
+  }
+]
