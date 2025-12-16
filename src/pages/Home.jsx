@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { fetchAllMarkets } from '../services/api';
 import MarketCard from '../components/MarketCard';
+import SearchBar from '../components/SearchBar';
 
 const Home = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     const loadMarkets = async () => {
@@ -21,6 +23,15 @@ const Home = () => {
 
     loadMarkets();
   }, []);
+
+  // Filter markets based on search term
+  const filteredMarkets = markets.filter(market => 
+    market.market.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    market.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    market.products.some(product => 
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+  );
 
   if (loading) {
     return <div style={styles.loading}>Loading markets...</div>;
@@ -39,11 +50,19 @@ const Home = () => {
         </p>
       </div>
 
-      <div style={styles.marketsGrid}>
-        {markets.map(market => (
-          <MarketCard key={market.id} market={market} />
-        ))}
-      </div>
+      <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+
+      {filteredMarkets.length === 0 ? (
+        <div style={styles.noResults}>
+          <p>No markets or products found matching "{searchTerm}"</p>
+        </div>
+      ) : (
+        <div style={styles.marketsGrid}>
+          {filteredMarkets.map(market => (
+            <MarketCard key={market.id} market={market} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -84,6 +103,12 @@ const styles = {
     padding: '3rem',
     fontSize: '1.25rem',
     color: '#ef4444'
+  },
+  noResults: {
+    textAlign: 'center',
+    padding: '3rem',
+    fontSize: '1.125rem',
+    color: '#6b7280'
   }
 };
 

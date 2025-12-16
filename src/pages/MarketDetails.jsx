@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchMarketById } from '../services/api';
 import PriceCard from '../components/PriceCard';
+import SearchBar from '../components/SearchBar';
+import PriceStats from '../components/PriceStats';
 
 const MarketDetails = () => {
   const { id } = useParams();
   const [market, setMarket] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     const loadMarket = async () => {
@@ -49,6 +52,11 @@ const MarketDetails = () => {
     });
   };
 
+  // Filter products based on search term
+  const filteredProducts = market.products.filter(product =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div style={styles.container}>
       <Link to="/" style={styles.backLink}>← Back to Markets</Link>
@@ -61,12 +69,28 @@ const MarketDetails = () => {
         </p>
       </div>
 
-      <h2 style={styles.sectionTitle}>Current Prices</h2>
-      <div style={styles.pricesGrid}>
-        {market.products.map(product => (
-          <PriceCard key={product.id} product={product} />
-        ))}
-      </div>
+      {/* THIS IS THE STATS COMPONENT - ADDED HERE */}
+      <PriceStats products={market.products} />
+
+      <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+
+      <h2 style={styles.sectionTitle}>
+        {filteredProducts.length === market.products.length 
+          ? 'Current Prices' 
+          : `Showing ${filteredProducts.length} of ${market.products.length} products`}
+      </h2>
+
+      {filteredProducts.length === 0 ? (
+        <div style={styles.noResults}>
+          <p>No products found matching "{searchTerm}"</p>
+        </div>
+      ) : (
+        <div style={styles.pricesGrid}>
+          {filteredProducts.map(product => (
+            <PriceCard key={product.id} product={product} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -123,6 +147,12 @@ const styles = {
   error: {
     textAlign: 'center',
     padding: '3rem'
+  },
+  noResults: {
+    textAlign: 'center',
+    padding: '3rem',
+    fontSize: '1.125rem',
+    color: '#6b7280'
   }
 };
 
