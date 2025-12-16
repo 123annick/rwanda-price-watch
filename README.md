@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## ✨ New Features (Week 4)
+
+- 🔍 Search functionality for markets and products
+- 📊 Price statistics dashboard
+- 🎨 Enhanced UI with smooth transitions
+- 📱 Fully responsive design
+- ⚡ Improved loading states
+- 🎯 Product filtering in market details
+
+## Screenshots
+![alt text](image-2.png),![alt text](image-3.png),![alt text](image-5.png),
+![alt text](image.png),![alt text](image-1.png),![alt text](image-4.png),
+## Live Demo
