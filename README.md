@@ -1,85 +1,237 @@
-# Getting Started with Create React App
+# 🛒 Rwanda Price Watch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that helps Rwandans track daily food prices across major markets in Rwanda, enabling informed purchasing decisions and better budget planning.
 
-## Available Scripts
+![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![React](https://img.shields.io/badge/React-18.x-blue.svg)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📖 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [About](#about)
+- [Problem Statement](#problem-statement)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Markets Covered](#markets-covered)
+- [Future Enhancements](#future-enhancements)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🎯 About
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Rwanda Price Watch is a React-based web application designed to address the challenge of price transparency in Rwanda's food markets. Many Rwandans struggle to know the real prices of essential food items as prices change frequently across different markets. This application provides up-to-date price information, highlights daily changes, and covers major markets nationwide.
 
-### `npm run build`
+**Live Demo:** [If you deploy, add link here, otherwise remove this line]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ❗ Problem Statement
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Rwandans face several challenges regarding food price awareness:
 
-### `npm run eject`
+- 📍 Prices vary widely between markets and districts
+- 💰 People often overpay because there is no centralized source of price information
+- 📊 Households struggle to plan budgets due to unpredictable price changes
+- 🔍 There is no simple digital tool to check daily prices
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Rwanda Price Watch solves this** by offering daily updated price information in one centralized, easy-to-use platform.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ✨ Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Core Features
+- ✅ **View Daily Prices** - Check current prices for common food products (beans, rice, tomatoes, potatoes, etc.)
+- ✅ **Market Selection** - Browse and select from 6 major markets across Rwanda
+- ✅ **Automatic Price Change Detection**:
+  - 🔼 Price increased (Red)
+  - 🔽 Price decreased (Green)
+  - ➖ No change (Grey)
+- ✅ **Price Statistics Dashboard** - View summary of price changes at a glance
+- ✅ **Search Functionality** - Filter markets and products by name
+- ✅ **Timestamps** - See when each market was last updated
+- ✅ **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
 
-## Learn More
+### User Benefits
+- Make informed purchasing decisions
+- Save money by comparing prices across markets
+- Plan household budgets more effectively
+- Track price trends over time
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Technologies Used
 
-### Code Splitting
+- **React** (v18.x) - Frontend framework
+- **React Router DOM** - Navigation and routing
+- **JavaScript (ES6+)** - Programming language
+- **CSS3** - Styling and animations
+- **Git & GitHub** - Version control
+- **Mock API** - Simulated data source (ready for real API integration)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🚀 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
 
-### Making a Progressive Web App
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Installation
 
-### Advanced Configuration
+1. **Clone the repository**
+```bash
+   git clone https://github.com/YOUR_USERNAME/rwanda-price-watch.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Navigate to project directory**
+```bash
+   cd rwanda-price-watch
+```
 
-### Deployment
+3. **Install dependencies**
+```bash
+   npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. **Start development server**
+```bash
+   npm start
+```
 
-### `npm run build` fails to minify
+5. **Open in browser**
+```
+   http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
 
+## 📱 Usage
 
-## ✨ New Features (Week 4)
+### Viewing Market Prices
 
-- 🔍 Search functionality for markets and products
-- 📊 Price statistics dashboard
-- 🎨 Enhanced UI with smooth transitions
-- 📱 Fully responsive design
-- ⚡ Improved loading states
-- 🎯 Product filtering in market details
+1. **Home Page** - View all 6 markets with quick overview
+2. **Click any market card** - Navigate to detailed price information
+3. **Use search bar** - Filter markets or products by name
+4. **Check statistics** - View how many products increased, decreased, or stayed the same
+5. **Compare prices** - See today's vs yesterday's prices at a glance
 
-## Screenshots
-![alt text](image-2.png),![alt text](image-3.png),![alt text](image-5.png),
-![alt text](image.png),![alt text](image-1.png),![alt text](image-4.png),
-## Live Demo
+### Navigation
+
+- **Home** - View all markets
+- **About** - Learn about the project and its purpose
+- **Market Details** - Click any market to see detailed prices
+
+---
+
+## 📂 Project Structure
+```
+rwanda-price-watch/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx           # Navigation bar
+│   │   ├── Footer.jsx           # Footer component
+│   │   ├── MarketCard.jsx       # Individual market card
+│   │   ├── PriceCard.jsx        # Product price display
+│   │   ├── PriceChangeIndicator.jsx  # Price change icon/color
+│   │   ├── PriceStats.jsx       # Statistics dashboard
+│   │   └── SearchBar.jsx        # Search functionality
+│   ├── pages/
+│   │   ├── Home.jsx             # Main markets page
+│   │   ├── MarketDetails.jsx   # Individual market page
+│   │   └── About.jsx            # About/info page
+│   ├── services/
+│   │   └── api.js               # API service & utilities
+│   ├── data/
+│   │   └── mockData.json        # Mock market data
+│   ├── App.js                   # Main app component
+│   ├── App.css                  # Global styles
+│   └── index.js                 # Entry point
+├── package.json
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🗺️ Markets Covered
+
+The application currently tracks prices from 6 major markets across all provinces of Rwanda:
+
+| Market | Location | Province |
+|--------|----------|----------|
+| **Kimironko Market** | Kigali | Kigali City |
+| **Nyabugogo Market** | Kigali | Kigali City |
+| **Musanze Market** | Musanze | Northern Province |
+| **Huye Market** | Huye | Southern Province |
+| **Rubavu Market** | Rubavu | Western Province |
+| **Kayonza Market** | Kayonza | Eastern Province |
+
+These markets represent Rwanda's major commercial hubs, ensuring comprehensive price coverage across the country.
+
+---
+
+## 🔮 Future Enhancements
+
+Potential features for future versions:
+
+- 📈 **7-day Price Trend Charts** - Visualize price changes over a week
+- 🔔 **Price Alerts** - Notify users when prices change significantly
+- 🌍 **More Markets** - Expand coverage to additional districts
+- 🔌 **Real API Integration** - Connect to live government or market data sources
+- 📊 **Price Comparison Tool** - Compare the same product across multiple markets
+- 📤 **Export Functionality** - Download price data as CSV/PDF
+- 🌙 **Dark Mode** - Eye-friendly theme for night browsing
+- 🇬🇧🇫🇷🇷🇼 **Multi-language Support** - English, French, and Kinyarwanda
+- 👤 **User Accounts** - Save favorite markets and get personalized alerts
+
+---
+
+## 👨‍💻 Author
+
+**Annick Ujeneza**
+
+- GitHub:https://github.com/123annick
+- LinkedIn: https://www.linkedin.com/in/annick-ujeneza-77667526b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_contact_details%3BkcAIwax%2FRi6Hl5r2RideDQ%3D%3D
+- Email: annickujeneza4@gmail.com
+
+---
+
+## 🙏 Acknowledgments
+
+- **ALX Software Engineering Program** - For the capstone project opportunity and guidance
+- **Rwanda Ministry of Trade** - For inspiration on addressing price transparency
+- **React Community** - For excellent documentation and resources
+- **All testers and reviewers** - For valuable feedback
+
+---
+
+## 📄 License
+
+This project is open source and available for educational purposes.
+
+---
+
+## 📞 Contact & Feedback
+
+If you have any questions, suggestions, or feedback, please feel free to:
+- Open an issue on GitHub
+- Contact me directly via email
+- Submit a pull request with improvements
+
+---
+
+**Built with ❤️ for Rwanda** 🇷🇼
+
+*This project was created as part of the ALX Software Engineering Capstone Project (December 2025)*
