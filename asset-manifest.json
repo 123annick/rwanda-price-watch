@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/123annick/rwanda-price-watch/static/css/main.65372e19.css",
+    "main.js": "/123annick/rwanda-price-watch/static/js/main.94e076ea.js",
+    "index.html": "/123annick/rwanda-price-watch/index.html",
+    "main.65372e19.css.map": "/123annick/rwanda-price-watch/static/css/main.65372e19.css.map",
+    "main.94e076ea.js.map": "/123annick/rwanda-price-watch/static/js/main.94e076ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65372e19.css",
+    "static/js/main.94e076ea.js"
+  ]
+}
