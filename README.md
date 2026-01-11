@@ -27,8 +27,6 @@ A web application that helps Rwandans track daily food prices across major marke
 
 Rwanda Price Watch is a React-based web application designed to address the challenge of price transparency in Rwanda's food markets. Many Rwandans struggle to know the real prices of essential food items as prices change frequently across different markets. This application provides up-to-date price information, highlights daily changes, and covers major markets nationwide.
 
-**Live Demo:** [If you deploy, add link here, otherwise remove this line]
-
 ---
 
 ## ❗ Problem Statement
